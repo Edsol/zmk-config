@@ -1,14 +1,10 @@
 manifest:
   remotes:
-  - name: foostan
-    url-base: https://github.com/piit79
-  # - name: zmkfirmware
-  #   url-base: https://github.com/zmkfirmware
-  # Additional modules containing boards/shields/custom code can be listed here as well
-  # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+  - name: zmkfirmware
+    url-base: https://github.com/zmkfirmware
   projects:
   - name: zmk
-    remote: foostan
+    remote: zmkfirmware
     revision: main
     import: app/west.yml
   self:
