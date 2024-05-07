@@ -132,42 +132,36 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
-            label = "WIN_DESK_LEFT";
         };
 
         brackets: WIN_DESK_RIGHT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
-            label = "WIN_DESK_RIGHT";
         };
 
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(DEL)>;
-            label = "CUT";
         };
 
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(INS)>;
-            label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(INS)>;
-            label = "PASTE";
         };
 
         enie_mac: enie_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(N) &kp N &kp N>;
-            label = "ENIE_MAC";
         };
     };
 
