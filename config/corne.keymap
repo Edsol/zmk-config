@@ -5,9 +5,30 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos { compatible = "zmk,combos"; };
 
-    keymap { compatible = "zmk,keymap"; };
+    keymap {
+        compatible = "zmk,keymap";
+
+        sturdy {
+            bindings = <
+&kp ESC    &kp V  &kp M  &kp L   &kp C   &kp P     &kp B   &kp U   &kp O      &kp Q    &trans    &trans
+&kp TAB    &kp S  &kp T  &kp R   &kp D   &kp Y     &kp F   &kp N   &kp E      &kp A    &kp I     &trans
+&kp LSHFT  &kp X  &kp K  &kp J   &kp G   &kp W     &kp Z   &kp H   &kp COMMA  &kp DOT  &kp SEMI  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        querty {
+            bindings = <
+&kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P      &trans
+&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI   &trans
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp MINUS  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+    };
 };
