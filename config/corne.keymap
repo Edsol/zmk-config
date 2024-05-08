@@ -11,14 +11,16 @@
     combos {
         compatible = "zmk,combos";
 
-        to_querty {
-            bindings = <&sl 0>;
+        stick_colemak {
+            bindings = <&sl 3>;
             key-positions = <37 40>;
+            layers = <0>;
         };
 
-        to_colemak {
-            bindings = <&sl 3>;
-            key-positions = <37 39>;
+        to_qwerty {
+            bindings = <&sl 0>;
+            key-positions = <37 40>;
+            layers = <3>;
         };
     };
 
@@ -67,10 +69,10 @@
         colemak-DH {
             label = "colemak";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp F     &kp P   &kp B        &kp J    &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T   &kp G        &kp M    &kp N   &kp E      &kp I    &kp O     &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D   &kp V        &kp K    &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &trans  &kp SPACE    &kp RET  &trans  &kp RALT
             >;
         };
     };
