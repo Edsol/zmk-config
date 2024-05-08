@@ -8,7 +8,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_colemak {
+            bindings = <&to 1>;
+            key-positions = <37 40>;
+            layers = <0>;
+        };
+
+        to_qwerty {
+            bindings = <&to 0>;
+            key-positions = <37 40>;
+            layers = <1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
