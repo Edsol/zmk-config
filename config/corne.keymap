@@ -50,10 +50,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T     &kp Y          &kp U      &kp I          &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G     &kp H          &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B     &kp N          &kp M      &kp COMMA      &kp DOT  &kp FSLH  &to 1
-                         &kp LEFT_WIN  &kp ENTER  &trans    &kp BACKSPACE  &kp SPACE  &kp RIGHT_ALT
+&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y            &kp U      &kp I          &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G        &kp H            &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N            &kp M      &kp COMMA      &kp DOT  &kp FSLH  &to 1
+                         &kp LEFT_WIN  &kp ENTER  &lt 2 TAB    &lt 3 BACKSPACE  &kp SPACE  &kp RIGHT_ALT
             >;
 
             label = "querty";
@@ -71,10 +71,10 @@
 
         symb {
             bindings = <
-&kp TAB    &kp EXCL  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &arrow     &sk GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &kp BSPC
-&kp LCTRL  &trans    &kp EQUAL  &kp PLUS  &kp MINUS   &trans         &trans     &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kt SEMICOLON  &trans
-&trans     &trans    &trans     &trans    &trans      &trans         &kp LT     &kp GT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans
-                                &trans    &trans      &kp SPACE      &kp ENTER  &trans            &trans
+&kp TAB    &kp EXCL  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &arrow  &sk GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &kp BSPC
+&kp LCTRL  &trans    &kp EQUAL  &kp PLUS  &kp MINUS   &trans         &trans  &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kt SEMICOLON  &trans
+&trans     &trans    &trans     &trans    &trans      &trans         &kp LT  &kp GT            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans
+                                &trans    &trans      &trans         &trans  &trans            &trans
             >;
 
             label = "symb";
@@ -82,10 +82,10 @@
 
         numb {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6  &kp N7  &kp N8  &kp N9  &trans  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &kp SPACE    &kp N0  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6          &kp N7        &kp N8          &kp N9           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans          &trans        &trans          &trans           &trans  &trans
+                        &trans  &trans  &kp SPACE    &kp N0          &trans        &trans
             >;
 
             label = "numb";
